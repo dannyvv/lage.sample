@@ -1,6 +1,6 @@
 export default {
     pipelines: {
-        // undocumented feature: Allows shared defaults for all pipeline targets with *.
+        // new (not yet proposed) feature: Allows shared defaults for all pipeline targets with *.
         "*": {
             options: {
                 // set some BuildXL options  for all targets
