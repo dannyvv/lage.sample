@@ -1,0 +1,14 @@
+{
+    "name": "PkgD",
+    "description": "Uses an environment variable to add a refernece to another file",
+    "lage": {
+        "bundle": {
+            "inputs": [
+                // This package uses MakeAppx.exe from the windows SDX nuget package. This doesn't make sense outside of office build, but does for office.
+                // but it shows example how to use environment variables to refer to files outside of the build scope.
+                // For example some tools might be relying on tools like globally installed msvc compiler in program files.
+                "{env:PKG_WINDOWS_SDX}/bin/**" 
+            ]
+        }
+    }
+}

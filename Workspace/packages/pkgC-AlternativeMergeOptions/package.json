@@ -1,5 +1,6 @@
 {
     "name": "pkgC-AlternativeMergeOptions",
+    "description": "A copy of pkgB but with explcit merge directives to customize merging behavior",
     "lage" {
         "build": {
             "inputs": ["__merge.prepend__", "boostrap/**"] // Alternatve to PkgB where a 'merge directive' is added

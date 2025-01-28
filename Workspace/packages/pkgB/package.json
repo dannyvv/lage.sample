@@ -1,5 +1,6 @@
 {
     "name": "PkgB",
+    "description": "A js package that has a special build and bundle semantics, slightly different from the standard one",
     "lage" {
         // These settings would be similar to adding "pkgB#build" and "PkgB#bundle" in the pipelines sectionf of /Workspace/lage.config.js
         "build": {
