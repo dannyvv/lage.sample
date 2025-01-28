@@ -3,7 +3,9 @@ export default {
         // new (not yet proposed) feature: Allows shared defaults for all pipeline targets with *.
         "*": {
             options: {
-                // set some BuildXL options  for all targets
+                // Set some BuildXL options  for all targets.
+                // When environment is set, all env vars will stop flowing in by default under BuildXL and only these
+                // will be allowed in
                 environment: {
                     "SRCROOT": {passthrough: true} // Tells BuildXL to take the SRCROOT variable as-is and pass it to the child process.
                     "BUILDROOT": {passthrough: true} // Tells BuildXL to take the SRCROOT variable as-is and pass it to the child process.
