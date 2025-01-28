@@ -1,0 +1,17 @@
+{
+    "name": "pkgC-AlternativeMergeOptions",
+    "lage" {
+        "build": {
+            "inputs": ["__merge.prepend__", "boostrap/**"] // Alternatve to PkgB where a 'merge directive' is added
+        },
+        "bundle": {
+            "inputs": ["___merge.ovewrite___", "boostrap/**", "src/**"] , // Ovewrites the previous inputs with only the 2 values defined here.
+            "options": {
+                "__merge.directive__": "overwrite", // indicates to ignore the previous options, and ONLY use the ones defined here.
+                "environment": {
+                    "SOME_ENV_VAR": "only_single_envVar"
+                }
+            }
+        }
+    }
+}
