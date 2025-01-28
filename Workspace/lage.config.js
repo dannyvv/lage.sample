@@ -1,6 +1,6 @@
 
 export default {
-    extends: "../lage.config.js",
+    extends: "../lage.config.js", // allows extending settings similar to tsconfig. This can be a path -or- a resolvable node module.
     pipelines: {
         // inherits the build and bundle from common settings, but at this layer we are adding test support.
         // in reality we'll share test and lint, just illustrative :)
